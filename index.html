@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte Ezequiel - Fletes en Barranqueras, Chaco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-animation {
+            transition: all 0.6s ease-in-out;
+        }
+        
+        .truck-move {
+            transform: translateX(20px);
+        }
+        
+        .box-load {
+            transform: translateX(-60px) translateY(-10px) scale(0.8);
+            opacity: 0.9;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .carousel-container {
+            overflow: hidden;
+        }
+        
+        .carousel-track {
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .high-contrast {
+            filter: contrast(200%) brightness(150%);
+        }
+        
+        .dark-mode {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+        
+        .dark-mode * {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+            border-color: #ffffff !important;
+        }
+        
+        .dark-mode input, .dark-mode textarea, .dark-mode select {
+            background-color: #333333 !important;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div id="app"></div>
+    <script src="src/main.js"></script>
+</body>
+</html>
